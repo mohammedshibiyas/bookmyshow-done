@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@500&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+/* background-color:rgb(51, 53, 69); */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color:rgb(51, 53, 69) !important;  
+}
+.main-card{
+    width: 42%;
+    margin-top: 50px !important;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+/* ////////////navbr///////////// */
+.nav-bar{
+    width: 100%;
+    height: 80px;
+    background-color:rgb(51, 53, 69) !important;  
+}
+.nav-bar img{
+    width: 40%;
+}
+.nav-left{
+    text-align: center;
+    padding-top: 15px;
+}
+.nav-right a{
+    background-color: rgb(248, 68, 100);
+    border: 1px solid rgb(248, 68, 100);
+    padding: 2px 12px 6px 12px;
+    margin-left: 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    color: white !important;
+    font-weight: 400;
+    font-size: 13px;
+}
+.nav-right{
+    padding-top: 19px;
+}
+.nav-right i{
+    color: white;
+    margin-left: 24px;
+    font-size: 23px;
+}
+/* //////////////details///////////// */
+/* .card-details{
+    text-align: center;
+} */
+.card-details h5{
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 800 !important;
+    letter-spacing: 1px;
+    color: rgb(55, 55, 55);
+}
+.card-details input::placeholder{
+    font-size: 13px;
+}
+.m-name{
+    margin-bottom: 10px;
+    padding: 5px 280px 5px 5px;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 4px;
+}
+.rating{
+    padding: 5px 30px 5px 5px;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 4px;
+}
+.r-date{
+    padding: 5px 40px 5px 5px;
+    border: 1px solid rgb(205, 205, 205); 
+    border-radius: 4px;
+}
+textarea{
+    padding: 5px 0px 5px 0px; 
+    margin-top: 20px !important;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 4px;
+}
+textarea::placeholder{
+    font-size: 13px;
+}
+input[type=date]::placeholder{
+    font-size: 13px !important;
+}
+.lng{
+    margin-top: 10px;
+}
+.e-date::-ms-input-placeholder {
+    color: red; /* Specify the color you want for the placeholder text */
+    font-style: italic; /* Optionally, set any other desired style properties */
+  }
+.languages label{
+    color: gray;
+}
+.file{
+    padding: 10px;
+}
+.sbmt-btn{
+    text-align: center;
+    padding-top: 20px;
+   
+}
+.sbmt-btn button{
+    background-color: rgb(248, 68, 100);
+    border: 1px solid rgb(248, 68, 100);
+    margin-left: 10px;
+    padding: 10px 190px;
+    text-decoration: none;
+    border-radius: 3px;
+    color: white !important;
+    font-weight: 400;
+    font-size: 13px;
+}
+.view-banner img{
+    width: 40%;
+}
+.view-poster img{
+    width: 40%;
+}
+.delete-btn a{
+    background-color: rgb(248, 68, 100);
+    border: 1px solid rgb(248, 68, 100);
+    padding: 2px 12px 6px 12px;
+    margin-left: 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    color: white !important;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+@media(min-width:350px) and (max-width:575px){
+
+    
+.main-card{
+    width: 100%;
+    margin-top: 50px !important;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.m-name{
+    margin-bottom: 10px;
+    padding: 5px 165px 5px 5px;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 4px;
+
+}
+
+.rating{
+    padding: 5px 40px 5px 5px;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 4px;
+}
+.r-date{
+    padding: 5px 30px 5px 5px;
+    border: 1px solid rgb(205, 205, 205); 
+    border-radius: 4px;
+}
+
+textarea{
+    padding: 5px 30px 5px 5px !important; 
+    margin-top: 20px !important;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 4px;
+}
+
+.sbmt-btn button{
+    background-color: rgb(248, 68, 100);
+    border: 1px solid rgb(248, 68, 100);
+    margin-left: 10px;
+    padding: 10px 150px;
+    text-decoration: none;
+    border-radius: 3px;
+    color: white !important;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+}
