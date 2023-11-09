@@ -55,7 +55,7 @@ async function searchFunction(){
                 s+=`<div class="movies">
                 <div class="row">
                     
-                    <div class="col-lg-3 col-sm-12 rec-movie">
+                    <div class="col-lg col-sm-6 rec-movie">
                        <a href="./pages/movei-details.html?id=${dt._id}" title="link"> <img src="${dt.Movie_poster}" alt=""></a>
                         <p class="movies-p1">${dt.Movie_Title}</p>
                         <p class="movies-p2">${dt.Category}</p>
