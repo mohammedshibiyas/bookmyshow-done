@@ -47,6 +47,7 @@ a{
   .sign-in {
     width: 75px;
     height: 28px;
+    margin-left: 10px;
     background-color: #f84464;
     border-radius: 6px;
     border: none;

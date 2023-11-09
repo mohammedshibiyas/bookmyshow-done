@@ -13,8 +13,8 @@
 
 <body>
     <!-- /////////main navbar/////////// -->
-    <div class="main-navbar">
-        <!-- <div class="container-fluid"> -->
+    <!-- <div class="main-navbar">
+        
         <div class="main-nav-left">
             <img src="./images/bookmyshow-logo-31BC3C7354-seeklogo.com-removebg-preview.png" alt="">
             <input type="search" onkeyup="searchFunction()" id="search-bar" placeholder="Search for Movies,Events,Plays,Sports and Activities">
@@ -25,13 +25,43 @@
                 <option value="kochi">tvm</option>
                 <option value="kochi">clct</option>
             </select>
-            <!-- <a href="./pages/create.html">Sign in</a>
-            <a href="./pages/register-movie.html">Register Movie</a> -->
+          
             <span id="name"></span>
-            <!-- <i class="fa fa-bars" aria-hidden="true" id="toggle-panel"></i> -->
+           
         </div>
-        <!-- </div> -->
-    </div>
+       
+    </div> -->
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <div><img src="./images/bookmyshow-logo-31BC3C7354-seeklogo.com-removebg-preview.png" alt=""></div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="bar"><i class="fa fa-bars" aria-hidden="true"></i></div>
+          </button>
+          <div class="collapse navbar-collapse nav-content" id="navbarNavDropdown">
+            <div class="nav-left">
+              
+              <input class="navbar-search" type="text"    placeholder="Search for Movies,Events,Plays and Activities " id="search-bar" onkeyup="searchFunction()">
+            </div>
+            <div class="nav-right">
+              <div><input class="navbar-search-sub" type="text"    placeholder="Search for Movies,Events,Plays and Activities " id="search-bar2" onkeyup="searchFunctionsm()"></div>
+                <div><span class="name" id="name"></span></div>
+                <div></div>
+                <div></div>
+                <div class="select"> <select name="cars" id="cars">
+                  <option value="volvo">Kochi</option>
+                  <option value="saab">Perinthalmanna</option>
+                  <option value="mercedes">Malappuram</option>
+                  <option value="audi">Angadippuram</option>
+                </select>
+                </div>
+                <div class="bar"><i class="fa fa-bars" aria-hidden="true"></i></div>
+            </div>
+          </div>
+        </div>
+      </nav>
     <!-- ///////////////sec navbar////////////// -->
     <div class="sec-navbar">
         <div class="sec-nav-left">
@@ -60,7 +90,7 @@
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner">
+        <div class="carousel-inner caro">
             <div class="carousel-item active">
                 <img src="./images/1697091858242_dussehradesktop.avif" class="d-block w-100" alt="...">
             </div>
@@ -91,7 +121,7 @@
             <div class="see-all">See all <i class="fa fa-angle-right" aria-hidden="true"></i></div>
         </div>
 
-        <div class="list-data" id="list-data">
+        <!-- <div class="list-data" id="list-data">
             <div class="movies">
                 <div class="row " id="show">
                     
@@ -102,7 +132,27 @@
         <div class="endless-banner">
             <img src="./images/endless banner.avif" alt="">
         </div>
-    </div>
+    </div> -->
+
+    
+    <!-- <div class="banner" ><img src="" class="img-fluid  " alt="..."></div> -->
+
+
+    <div class="content">
+      <div class="heading">
+          <!-- <Span class="Movies">Reccomented Movies</Span> -->
+      </div>
+      <div class="card-containerr">
+          <div id="list-data" class="card-sub-containerr">
+                    
+          </div>
+      </div>
+  </div>
+
+
+
+
+
     <!-- ////////play now//////// -->
     <div class="play-now">
         <div class="container play-now-logo">

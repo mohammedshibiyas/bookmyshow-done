@@ -44,13 +44,14 @@ getdata();
 async function searchFunction(){
     let inp=document.getElementById("search-bar");
     try {
-        res=await fetch("http://localhost:3004/api/movies")
+        res=await fetch("http://localhost:3004/api/movies");
         data=await res.json();
         console.log(data);
         s="";
         let text=inp.value;
         data.filter((dt)=>{
-            if(dt.Movie_Title.startswith(text)){
+            console.log(dt.Movie_Title);
+            if(dt.Movie_Title.startsWith(text)){
 
                 s+=`<div class="movies">
                 <div class="row">
@@ -71,6 +72,35 @@ async function searchFunction(){
     }
 }
 
+// sm search
+
+async function searchFunctionsm(){
+    let inp=document.getElementById("search-bar2");
+    try {
+        res=await fetch("http://localhost:3004/api/movies");
+        data=await res.json();
+        console.log(data);
+        s="";
+        let text=inp.value;
+        data.filter((dt)=>{
+            console.log(dt.Movie_Title);
+            if(dt.Movie_Title.startsWith(text)){
+
+                s+= `<div class="cardd">
+                <a href="./pages/movies/details1.html?id=${dt._id}"><img class="card-imgg" src="${dt.Movie_Poster}" alt=""></a>
+                <div class="discription">
+                    <div class="film"><span class="film-name">${dt.Movie_Title}</span></div>
+                    <div><span class="genre">${dt.Category  }</span></div>
+                </div>
+            </div>`
+            }
+
+        })
+        document.getElementById("list-data").innerHTML=s;
+    } catch (error) {
+        
+    }
+}
 
 function del(){
   var confirmed=confirm("do you want to logout")
